@@ -35,8 +35,8 @@ function setup(){
 
 function draw(){
 	// First for loop shows all curve at once, second loop draws it in an animation
-	//for(let i = 0; i < N-1; ++i){ animation = false;
-	for(let i = 0; i < current; ++i){ animation = true;
+	for(let i = 0; i < N-1; ++i){ animation = false;
+	//for(let i = 0; i < current; ++i){ animation = true;
 		// Pick the color from the picture's pixel placed in the vertex
 		let color = img.get(int(points[i][0]),int(points[i][1])); //ERROR
 		line(points[i][0], points[i][1], points[i+1][0], points[i+1][1]);
